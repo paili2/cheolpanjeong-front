@@ -5,6 +5,8 @@ import CategoryButton from "./subComponents/CategoryButton";
 import { useState } from "react";
 import MenuCard from "./subComponents/MenuCard";
 import ShortcutButton from "@/src/common/components/ShortcutButton";
+import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const Menu = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -20,7 +22,7 @@ const Menu = () => {
   return (
     <section>
       <SectionLayout className="flex flex-col gap-5 justify-center items-center">
-        <h1 className="text-5xl">Isaac Toast Menu</h1>
+        <h1 className="text-5xl">Menu</h1>
         <ul className="flex gap-5">
           {menu.map((v, i) => {
             return (
@@ -51,7 +53,11 @@ const Menu = () => {
             src="https://www.outback.co.kr/upload/product/20240415/20240415012246748189.jpeg"
           ></MenuCard>
         </div>
-        <ShortcutButton text={"더보기"}></ShortcutButton>
+        <Link href={"/menu"}>
+          <ShortcutButton hoverBg="[#FF291E]" text={"더보기"}>
+            <FaArrowRightLong />
+          </ShortcutButton>
+        </Link>
       </SectionLayout>
     </section>
   );

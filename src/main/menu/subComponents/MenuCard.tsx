@@ -4,7 +4,13 @@ type menuCardProps = { src: string; menuName: string };
 
 const MenuCard = ({ src, menuName }: menuCardProps) => {
   return (
-    <div className="w-[300px] h-[300px] border rounded-xl flex flex-col">
+    <div
+      style={{
+        boxShadow:
+          "1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15), -1.95px -1.95px 2.6px rgba(0, 0, 0, 0.15)",
+      }}
+      className="w-[300px] h-[300px] rounded-xl flex flex-col"
+    >
       <div className="w-full h-2/3 relative border-none rounded-t-xl">
         <Image
           className="object-cover border-none rounded-t-xl absolute"

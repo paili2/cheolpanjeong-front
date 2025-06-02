@@ -1,19 +1,29 @@
 import SectionLayout from "@/src/common/SectionLayout";
 import ShortcutButton from "../../common/components/ShortcutButton";
+import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const BrandStory = () => {
   return (
     <section>
       <SectionLayout className="flex flex-col justify-center items-center gap-5">
-        <strong className="text-5xl">Enjoy Sweet Day</strong>
-        <p>이삭토스트와 함께한 달콤한 기억이 있나요?</p>
+        <strong className="text-5xl text-white">
+          “철판 위에 정(情)을 볶습니다”
+        </strong>
+        <p className="text-white text-3xl"></p>
+        <p className="text-center text-lg text-white"></p>
+
+        <strong className="text-3xl">SIZZLING JOY CHEOLPANJEONG</strong>
+        <p>오늘도 따듯하고 든든한, 철판정</p>
         <p className="text-center">
-          한 손에 담긴 든든한 한 끼, 한 입에 퍼지는 미소
-          <br /> 오늘도 한 손에 담긴 따듯한 토스트로 마음을 전하고 나누며
-          고객님을 맞이할 준비를 합니다. <br /> 어김없이 따듯한 토스트가
-          기다리는 곳, 이삭토스트 입니다.
+          매콤달콤 우삼겹닭갈비와 바삭한 철판볶음밥의 불 맛이,
+          <br /> 오늘도 철판 위에서 특별한 추억을 선물합니다 :)
         </p>
-        <ShortcutButton text={"브랜드 스토리"}></ShortcutButton>
+        <Link href={"/brand"}>
+          <ShortcutButton hoverBg="[#FF291E]" text={"브랜드 스토리"}>
+            <FaArrowRightLong />
+          </ShortcutButton>
+        </Link>
       </SectionLayout>
     </section>
   );

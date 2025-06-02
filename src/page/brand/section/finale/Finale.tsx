@@ -2,7 +2,7 @@ import SectionLayout from "@/src/common/SectionLayout";
 
 const Finale = () => {
   return (
-    <section className="w-full h-full bg-[#FF291E]">
+    <section className="w-full h-full bg-[#FFE68C]">
       <SectionLayout
         paddingTop="0"
         height="h-fit"

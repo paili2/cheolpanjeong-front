@@ -38,3 +38,13 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/* 1) 기본(비활성) bullet 컬러 변경 */
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.6); /* 예시: 반투명 화이트 */
+}
+
+/* 2) 활성(active) bullet 컬러 변경 */
+.swiper-pagination-bullet-active {
+  background-color: #ff291e; /* 예시: 레드 계열 */
+}
