@@ -1,10 +1,12 @@
 import SectionLayout from "@/src/common/SectionLayout";
 import Search from "../../common/components/Search";
 import ListHeader from "@/src/common/components/ListHeader";
-import ListTitle from "./subComponents/ListTitle";
-import List from "./subComponents/List";
+import ListTitle from "./components/ListTitle";
+import List from "./components/List";
 
 const NoticePage = () => {
+  const postlist = Array(50).fill(0);
+
   return (
     <section>
       <SectionLayout
@@ -13,12 +15,9 @@ const NoticePage = () => {
       >
         <ListHeader title={"공지사항"}></ListHeader>
         <ListTitle></ListTitle>
-        <List></List>
-        <List></List>
-        <List></List>
-        <List></List>
-        <List></List>
-        <List></List>
+        {postlist.map((post, i) => (
+          <List key={i}></List>
+        ))}
       </SectionLayout>
     </section>
   );

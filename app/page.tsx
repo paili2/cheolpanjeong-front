@@ -1,13 +1,13 @@
-import BrandStory from "@/src/main/brand/BrandStrory";
-import HeroSlider from "@/src/main/heroSlider/HeroSlider";
-import Menu from "@/src/main/menu/Menu";
+import BrandSection from "@/src/components/MainPage/sections/BrandSection/BrandSection";
+import HeroSliderSection from "@/src/components/MainPage/sections/HeroSliderSection/HeroSliderSection";
+import MenuSection from "@/src/components/MainPage/sections/MenuSection/MenuSection";
 
 export default function Home() {
   return (
-    <div>
-      <HeroSlider></HeroSlider>
-      <BrandStory></BrandStory>
-      <Menu></Menu>
-    </div>
+    <>
+      <HeroSliderSection></HeroSliderSection>
+      <BrandSection />
+      <MenuSection />
+    </>
   );
 }

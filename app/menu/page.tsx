@@ -1,4 +1,4 @@
-import MenuPage from "@/src/page/menu/MenuPage";
+import MenuPage from "@/src/components/MenuPage/MenuPage";
 
 const Page = () => {
   return (

@@ -1,4 +1,4 @@
-import NoticePage from "@/src/page/notice/NoticePage";
+import NoticePage from "@/src/components/NoticePage/NoticePage";
 
 const Page = () => {
   return <NoticePage></NoticePage>;

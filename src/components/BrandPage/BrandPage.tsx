@@ -1,8 +1,8 @@
 import SectionLayout from "@/src/common/SectionLayout";
-import Introduce from "./section/introduce/Introduce";
-import Highlight from "./section/highlight/Highlight";
-import BrandFeel from "./section/brandFeel/BrandFeel";
-import Finale from "./section/finale/Finale";
+import Introduce from "./sections/IntroduceSection/Introduce";
+import Highlight from "./sections/HighlightSection/Highlight";
+import BrandFeel from "./sections/BrandFeelSection/BrandFeel";
+import Finale from "./sections/FinaleSection/Finale";
 
 const BrandPage = () => {
   return (

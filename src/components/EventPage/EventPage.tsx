@@ -1,7 +1,7 @@
 "use client";
 
 import SectionLayout from "@/src/common/SectionLayout";
-import EventCard from "./subComponents/EventCard";
+import EventCard from "./components/EventCard";
 import ListHeader from "@/src/common/components/ListHeader";
 import ShortcutButton from "@/src/common/components/ShortcutButton";
 import { FaArrowDown } from "react-icons/fa";

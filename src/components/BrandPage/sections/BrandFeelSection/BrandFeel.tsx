@@ -3,8 +3,15 @@
 import SectionLayout from "@/src/common/SectionLayout";
 import Image from "next/image";
 import { easeIn, easeInOut, easeOut, motion } from "motion/react";
+import MotionText from "../../common/MotionText";
 
 const BrandFeel = () => {
+  const motionText = [
+    "🚩 오늘도 당신의 하루에 정(情) 한 스푼,",
+    "철판 위의 따뜻한 이야기,",
+    "철판정에서 시작됩니다.",
+  ];
+
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -60,15 +67,9 @@ const BrandFeel = () => {
           ></Image>
         </motion.div>
         <motion.div className="flex flex-col items-end gap-3">
-          <motion.span variants={innerVariants} className="text-xl">
-            🚩 오늘도 당신의 하루에 정(情) 한 스푼,
-          </motion.span>
-          <motion.span variants={innerVariants} className="text-xl  mb-7">
-            철판 위의 따뜻한 이야기,
-          </motion.span>
-          <motion.span variants={innerVariants} className="text-xl">
-            철판정에서 시작됩니다.
-          </motion.span>
+          {motionText.map((v, i) => (
+            <MotionText variants={innerVariants} key={i} text={v}></MotionText>
+          ))}
         </motion.div>
       </motion.div>
     </SectionLayout>

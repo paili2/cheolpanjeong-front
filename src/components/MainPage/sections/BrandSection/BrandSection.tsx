@@ -1,9 +1,10 @@
 import SectionLayout from "@/src/common/SectionLayout";
-import ShortcutButton from "../../common/components/ShortcutButton";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
+import ShortcutButton from "@/src/common/components/ShortcutButton";
 
-const BrandStory = () => {
+const BrandSection = () => {
   return (
     <section>
       <SectionLayout className="flex flex-col justify-center items-center gap-5">
@@ -29,4 +30,4 @@ const BrandStory = () => {
   );
 };
 
-export default BrandStory;
+export default BrandSection;

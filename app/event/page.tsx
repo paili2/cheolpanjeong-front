@@ -1,4 +1,4 @@
-import EventPage from "@/src/page/event/EventPage";
+import EventPage from "@/src/components/EventPage/EventPage";
 
 const Page = () => {
   return <EventPage></EventPage>;

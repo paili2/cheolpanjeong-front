@@ -1,5 +1,5 @@
 import SectionLayout from "@/src/common/SectionLayout";
-import BrandPage from "@/src/page/brand/BrandPage";
+import BrandPage from "@/src/components/BrandPage/BrandPage";
 
 const Page = () => {
   return (
