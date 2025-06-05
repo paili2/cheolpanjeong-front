@@ -30,7 +30,7 @@ const AdminSidebar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 min-h-screen bg-gray-800 text-gray-100 flex flex-col">
+    <aside className="fixed top-0 left-0 z-50 w-64 min-h-screen bg-gray-800 text-gray-100 flex flex-col">
       <div className="h-16 flex items-center justify-center border-b border-gray-700">
         <Logo className="text-[25px]" />
       </div>
