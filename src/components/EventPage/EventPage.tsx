@@ -6,6 +6,7 @@ import ListHeader from "@/src/common/components/ListHeader";
 import ShortcutButton from "@/src/common/components/ShortcutButton";
 import { FaArrowDown } from "react-icons/fa";
 import { useState } from "react";
+import { pre } from "motion/react-client";
 
 const EventPage = () => {
   const [viewCount, setViewCount] = useState<number>(6);
@@ -27,7 +28,6 @@ const EventPage = () => {
           <ShortcutButton
             onMouseDown={() => setViewCount((prev) => prev + 6)}
             className="mt-[100px]"
-            hoverBg="[#FF291E]"
             text="더 보기"
           >
             <FaArrowDown />

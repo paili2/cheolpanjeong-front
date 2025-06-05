@@ -40,7 +40,6 @@ const BrandFeel = () => {
 
   return (
     <SectionLayout
-      paddingTop="pt-0"
       height="h-fit"
       className="flex flex-col items-center justify-center pb-[200px]"
     >

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import Header from "@/src/common/header/Header";
 import Footer from "@/src/common/footer/Footer";
 
@@ -25,8 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
   );
 }

@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 type shortcutButton = {
   onMouseDown?: () => void;
-  hoverBg: string;
+  rounded?: string;
   className?: string;
   text: string;
   children?: ReactNode;
@@ -11,7 +11,7 @@ type shortcutButton = {
 
 const ShortcutButton = ({
   onMouseDown,
-  hoverBg,
+  rounded = "4xl",
   className,
   text,
   children,
@@ -19,7 +19,8 @@ const ShortcutButton = ({
   return (
     <button
       onMouseDown={onMouseDown}
-      className={`border rounded-4xl px-5 py-2 flex items-center justify-center gap-3 hover:bg-${hoverBg} ${className} hover:text-white hover:cursor-pointer hover:border-transparent transition-all duration-200`}
+      className={`border rounded-${rounded} px-5 py-2 flex items-center justify-center gap-3 hover:bg-[#FF291E]
+      } ${className} hover:text-white hover:cursor-pointer hover:border-transparent transition-all duration-200`}
     >
       {text}
       {children}

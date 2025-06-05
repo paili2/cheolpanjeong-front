@@ -32,10 +32,7 @@ const Highlight = () => {
   };
 
   return (
-    <SectionLayout
-      paddingTop="pt-0"
-      className="flex flex-col items-center justify-center"
-    >
+    <SectionLayout className="flex flex-col items-center justify-center">
       <motion.div
         variants={containerVariants}
         initial="hidden"

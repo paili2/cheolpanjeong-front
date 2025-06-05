@@ -17,7 +17,7 @@ const MenuPage = () => {
         paddingTop="pt-[200px]"
         className="flex flex-col gap-15 items-center justify-center pb-[100px]"
       >
-        <h1 className="text-5xl font-bold">메뉴</h1>
+        <h2 className="text-5xl font-bold">메뉴</h2>
         <div className="flex gap-20">
           {category.map((v, i) => {
             if (i === index) {

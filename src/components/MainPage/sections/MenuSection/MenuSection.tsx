@@ -17,8 +17,8 @@ const MenuSection = () => {
 
   return (
     <section>
-      <SectionLayout className="flex flex-col gap-5 justify-center items-center">
-        <h1 className="text-5xl">Menu</h1>
+      <SectionLayout className="flex flex-col gap-5 justify-center items-center pb-[200px] ">
+        <h2 className="text-5xl">Menu</h2>
         <ul className="flex gap-5">
           {category.map((v, i) => {
             return (
@@ -37,7 +37,7 @@ const MenuSection = () => {
           ))}
         </div>
         <Link href={"/menu"}>
-          <ShortcutButton hoverBg="[#FF291E]" text={"더보기"}>
+          <ShortcutButton text={"더보기"}>
             <FaArrowRightLong />
           </ShortcutButton>
         </Link>

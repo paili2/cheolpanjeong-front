@@ -8,7 +8,7 @@ type menuButtonProps = {
 const MenuButton = ({ menu, link }: menuButtonProps) => {
   return (
     <li>
-      <Link className="text-xl" href={link}>
+      <Link className="text-xl text-white" href={link}>
         {menu}
       </Link>
     </li>

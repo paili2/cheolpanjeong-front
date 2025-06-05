@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import MenuButton from "./subComponents/MenuButton";
 import Link from "next/link";
+import Logo from "../Logo";
 
 const Header = () => {
   const { scrollY } = useScroll();
@@ -10,12 +11,10 @@ const Header = () => {
   return (
     <motion.header
       style={{ opacity }}
-      className="fixed top-0 w-full h-[120px] py-3 bg-black z-50"
+      className="fixed top-0 w-full h-[120px] py-3 bg-[#FF291E] z-50"
     >
       <nav className="w-full max-w-7xl h-full mx-auto flex justify-between items-center">
-        <Link href="/">
-          <h1 className="text-5xl font-bold">철판정</h1>
-        </Link>
+        <Logo />
         <ul className="flex gap-10">
           <MenuButton link={"/brand"} menu={"BRAND"}></MenuButton>
           <MenuButton link={"/menu"} menu={"MENU"}></MenuButton>

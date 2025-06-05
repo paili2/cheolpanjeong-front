@@ -10,7 +10,7 @@ type sectionLayout = {
 const SectionLayout = ({
   children,
   className,
-  height = "h-screen",
+  height = "h-[100%]",
   paddingTop = "pt-[200px]",
 }: sectionLayout) => {
   return (

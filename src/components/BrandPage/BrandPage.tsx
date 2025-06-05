@@ -6,7 +6,7 @@ import Finale from "./sections/FinaleSection/Finale";
 
 const BrandPage = () => {
   return (
-    <section className="w-full h-full pt-[120px]">
+    <section className="w-full h-full">
       <Introduce></Introduce>
       <div className="h-fit flex flex-col gap-15 items-center justify-center">
         <Highlight></Highlight>

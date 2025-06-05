@@ -21,7 +21,7 @@ const BrandSection = () => {
           <br /> 오늘도 철판 위에서 특별한 추억을 선물합니다 :)
         </p>
         <Link href={"/brand"}>
-          <ShortcutButton hoverBg="[#FF291E]" text={"브랜드 스토리"}>
+          <ShortcutButton text={"브랜드 스토리"}>
             <FaArrowRightLong />
           </ShortcutButton>
         </Link>
