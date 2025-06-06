@@ -47,7 +47,7 @@ const AdminLogin = () => {
               비밀번호 찾기
             </span>
           </Link>
-          <Link href={"/admin/login"}>
+          <Link href={"/admin/join/agree"}>
             <span className="text-gray-600 hover:text-black">회원가입</span>
           </Link>
         </div>

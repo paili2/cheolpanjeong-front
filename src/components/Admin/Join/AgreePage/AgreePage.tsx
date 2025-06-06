@@ -1,13 +1,14 @@
 import SectionLayout from "@/src/common/SectionLayout";
 import Checker from "./components/Checker";
 import TermsAgreement from "./components/TermsAgreement";
+import Link from "next/link";
 
-const Agree = () => {
+const AgreePage = () => {
   return (
     <section className="w-full h-[100%]">
       <SectionLayout
         maxWidth={"max-w-xl"}
-        className="bg-gray-300 px-10 flex flex-col gap-3"
+        className="bg-gray-100 px-10 flex flex-col gap-3"
       >
         <div className="flex items-center gap-3">
           <Checker />
@@ -21,12 +22,14 @@ const Agree = () => {
           title="이용약관"
           description="dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
         />
-        <button className="w-full bg-[#FF291E] py-4 border-none rounded-lg text-white font-bold">
-          다음
-        </button>
+        <Link href="/admin/join/agree/auth">
+          <button className="w-full bg-[#FF291E] py-4 border-none rounded-lg text-white font-bold cursor-pointer">
+            다음
+          </button>
+        </Link>
       </SectionLayout>
     </section>
   );
 };
 
-export default Agree;
+export default AgreePage;

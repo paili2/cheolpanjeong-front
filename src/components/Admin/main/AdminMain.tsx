@@ -13,7 +13,7 @@ const AdminMain = () => {
           철판정 관리자 페이지
         </h2>
         <div className="flex gap-5">
-          <Link href={"/admin/login"}>
+          <Link href={"/admin/join/agree"}>
             <ShortcutButton text="회원가입"></ShortcutButton>
           </Link>
           <Link href={"/admin/login"}>

@@ -1,9 +1,9 @@
-import Agree from "@/src/components/Admin/Join/Agree/Agree";
+import AgreePage from "@/src/components/Admin/Join/AgreePage/AgreePage";
 
 const Page = () => {
   return (
     <>
-      <Agree></Agree>
+      <AgreePage></AgreePage>
     </>
   );
 };
