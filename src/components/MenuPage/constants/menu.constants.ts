@@ -36,9 +36,4 @@ export const menu = [
     menuName: "새우철판볶음밥",
     src: "/menu/새우철판볶음밥.jpeg",
   },
-
-  {
-    menuName: "우삼겹철판볶음밥",
-    src: "/menu/우삼겹철판볶음밥.jpeg",
-  },
 ];
