@@ -5,7 +5,7 @@ import ListTitle from "./components/ListTitle";
 import List from "./components/List";
 
 const NoticePage = () => {
-  const postlist = Array(50).fill(0);
+  const postlist = Array(5).fill(0);
 
   return (
     <section>
